@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="imgs/imgs/logo.png">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-black">
+
+    
+      <!-- start sideBar -->
+  <div class="side-head min-vh-100 position-fixed d-flex top-0 z-1 ">
+  <div class="nav-head bg-black min-vh-100 d-flex flex-column p-2 justify-content-between">
+  <div class="links">
+    <ul class="text-white p-4">
+      <li id="searchNme" class="my-2">Search</li>
+      <li id="category" class="my-2">Category</li>
+      <li id="area" class="my-2">Area</li>
+      <li id="ingredients" class="my-2">Ingredients</li>
+      <li id="contactUs">Contact Us</li>
+    </ul>
+  </div>
+  <div class="footer text-white">
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-globe"></i>
+    </div>
+    <div class="footer-icns text-white">
+      <p>Copyright Â© 2019 All Rights Reserved.</p>
+    </div>
+  </div>
+  </div>
+  <div class="nav-header d-flex flex-column justify-content-between bg-white position-relative">
+    <img src="imgs/imgs/logo.png" alt="">
+    
+    <i class="fa-solid fa-bars fa-2xl text-center" id="open"></i>
+    <i class="fa-solid fa-bars d-none" id="bars"></i>
+    <div class="end text-center">
+      <i class="fa-solid fa-globe d-block"></i>
+      <i class="fa-solid fa-share-nodes"></i>
+    </div>
+  </div>
+  </div>
+    <!-- <section id="input" class="vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="name d-flex gap-4">
+                <input placeholder="Enter your Name" type="text" id="name" class="w-50 form-control">
+                <input placeholder="Enter your Email" type="email" id="email" class="w-50 form-control">
+            </div>
+            <div class="name d-flex gap-4 my-4">
+                <input placeholder="Enter your Phone" type="number" id="phone" class="w-50 form-control">
+                <input placeholder="Enter your age" type="number" id="age" class="w-50 form-control">
+            </div>
+            <div class="name d-flex gap-4">
+                <input placeholder="Enter your Password" type="password" id="password" class="w-50 form-control">
+                <input placeholder="Repassword" type="password" id="repassword" class="w-50 form-control">
+            </div>
+            <div class="button text-center my-3">
+                <button id="submitBtn" class="btn btn-outline-danger" disabled>Submit</button>
+            </div>
+           
+        </div>
+    </section> -->
+    <form id="contactForm" class="d-flex align-items-center vh-100 form-control bg-transparent border-0">
+        <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <input type="text" id="inputName" class="form-control inputs" placeholder="Enter Your Name">
+                <p id="nameAlert" class="alert alert-danger invalid-feedback w-100 mt-2">
+                    Special characters and numbers not allowed
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="email" onk id="inputEmail" class="form-control inputs" placeholder="Enter Your Email">
+                <p id="emailAlert" class="alert alert-danger invalid-feedback w-100 mt-2">
+                    Email not valid *exemple@yyy.zzz
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="tel" id="inputPhone" class="form-control inputs" placeholder="Enter Your Phone">
+                <p id="phoneAlert" class="alert alert-danger invalid-feedback w-100 mt-2">
+                    Enter valid Phone Number
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="number" id="inputAge" class="form-control inputs" placeholder="Enter Your Age">
+                <p id="ageAlert" class="alert alert-danger invalid-feedback w-100 mt-2">
+                    Enter valid age
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="password" id="inputPassword" class="form-control inputs" placeholder="Enter Your Password">
+                <p id="passwordAlert" class="alert alert-danger invalid-feedback w-100 mt-2">
+                    Enter valid password Minimum eight characters, at least one letter and one number:
+                </p>
+            </div>
+            <div class="col-md-6">
+                <input type="password" id="inputRepassword" class="form-control" placeholder="Repassword">
+                <p id="repasswordAlert" class="alert alert-danger invalid-feedback w-100 mt-2">
+                    Enter valid repassword 
+                </p>
+            </div>
+            <button id="submit" type="submit" value="Submit" disabled class="form-control rounded-1 btn btn-outline-danger text-opacity-50 w-25 m-auto mt-4">Submit</button>
+        </div>
+    </div>
+      </form>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
